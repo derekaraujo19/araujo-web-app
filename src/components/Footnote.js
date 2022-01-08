@@ -1,9 +1,10 @@
 import React from "react";
+import { FaInstagram } from 'react-icons/fa';
 
 function Footnote() {
   return (
     <div>
-      <h4>LINK TO IG</h4>
+      <a href="https://www.instagram.com/derek_araujo/"> <FaInstagram /> </a>
     </div>
   );
 }
