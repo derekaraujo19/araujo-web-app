@@ -9,7 +9,7 @@ function MusicPage() {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3001/toys")
+    fetch("http://localhost:3001/projects")
       .then((r) => r.json())
       .then((musicItems) => setProjects(musicItems));
   }, []);
@@ -24,7 +24,12 @@ function MusicPage() {
         {projects.map((project) => (
           <MusicCard
           key={project.id}
-          title={project.name}
+          title={project.title}
+          artist={project.artist}
+          credits={project.credits}
+          artwork={project.artwork}
+          player={project.player}
+          year={project.year}
           />
         ))}
       </ul>
