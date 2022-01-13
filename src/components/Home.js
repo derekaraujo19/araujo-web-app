@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 function Home() {
-  // useEffect that makes a request to populate the image
+  // useEffect that makes a request to populate the image - DONE
   // regular P section for the blurb - DONE
 
   const [homePic, setHomePic] = useState([]);
