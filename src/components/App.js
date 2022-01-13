@@ -6,7 +6,7 @@ import Title from "./Title";
 import NavBar from "./NavBar";
 import MusicPage from "./MusicPage";
 import Resume from "./Resume";
-import Comments from "./Comments";
+import CommentPage from "./CommentPage";
 import Home from "./Home";
 import Footnote from "./Footnote";
 
@@ -23,7 +23,7 @@ function App() {
           <Resume />
         </Route>
         <Route exact path="/comments">
-          <Comments />
+          <CommentPage />
         </Route>
         <Route exact path="/">
           <Home />
