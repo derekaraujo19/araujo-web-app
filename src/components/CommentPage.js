@@ -1,16 +1,40 @@
-import React from "react";
-import Comments from "./Comments"
+import React, {useState, useEffect} from "react";
+import Comments from "./Comments";
 
 // send addNewComment down to Comments component
-// create "comments" state
-// useEffect to get the comments from the server and "setComments"
+// create "comments" state - DONE
+// useEffect to get the comments from the server and "setComments" - DONE
 // addNewComment takes existing comments from server and adds new comments coming off of submit
-// map out comments
-
+// map out comments - DONE
 
 function CommentPage() {
+  const [comments, setComments] = useState([])
+
+  useEffect(() => {
+    fetch("http://localhost:3001/comments")
+      .then((r) => r.json())
+      .then((commentItems) => setComments(commentItems));
+  }, []);
+
+  console.log(comments);
+
+  function addNewComment(newComment) {
+    setComments([...comments, newComment]);
+  }
+
   return (
-    <Comments />
+    <div>
+      <h3>SHARE YOUR THOUGHTS</h3>
+      <ul className="comments">
+        {comments.map((comment) => (
+          <li key={comment.id}>
+            <h4>{comment.name} says..</h4>
+            <p>{comment.comment}</p>
+          </li>
+        ))}
+      </ul>
+      <Comments addNewComment={addNewComment}/>
+    </div>
   )
 }
 
