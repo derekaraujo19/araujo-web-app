@@ -8,7 +8,7 @@ import Comments from "./Comments";
 // map out comments - DONE
 
 function CommentPage() {
-  const [comments, setComments] = useState([])
+  const [comments, setComments] = useState([]);
 
   useEffect(() => {
     fetch("http://localhost:3001/comments")
@@ -16,7 +16,7 @@ function CommentPage() {
       .then((commentItems) => setComments(commentItems));
   }, []);
 
-  console.log(comments);
+  // console.log(comments);
 
   function addNewComment(newComment) {
     setComments([...comments, newComment]);
@@ -24,16 +24,16 @@ function CommentPage() {
 
   return (
     <div>
-      <h3>SHARE YOUR THOUGHTS</h3>
+      {/* <h3>SHARE YOUR THOUGHTS</h3> */}
       <Comments addNewComment={addNewComment}/>
-      <ul className="comments">
+      <div className="comments">
         {comments.map((comment) => (
-          <div key={comment.id}>
-            <h4>{comment.name} says..</h4>
+          <div id="comment" key={comment.id}>
             <p>{comment.comment}</p>
+            <h4 id="commenter">{comment.name}, {comment.occupation}</h4>
           </div>
         ))}
-      </ul>
+      </div>
     </div>
   )
 }

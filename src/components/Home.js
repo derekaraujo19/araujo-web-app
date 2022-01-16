@@ -22,7 +22,7 @@ function Home() {
       <img src={homePic.image}
             id="homeImage"
            alt="Derek"
-           height='625px'
+           height='650px'
            width='auto'
       />
     </div>

@@ -6,6 +6,7 @@
   font-size: 160%;
   text-transform: uppercase;
   margin: 1%;
+  /* background-color: #E5E4E2; */
 }
 
 .Title {
@@ -22,8 +23,9 @@
 }
 
 #homeImage {
-  margin-top: -40px;
-  margin-right: 30%;
+  margin-top: -75px;
+  margin-right: 25%;
+  padding: 10px;
 }
 
 #homeText {
@@ -51,6 +53,28 @@
   margin-right: auto;
   margin-bottom: 135px;
   margin-top: 0px;
+}
+#comment-form {
+  margin-top: -30px;
+}
+#commenter {
+  color: pink;
+  font-size: medium;
+  background-color: black;
+}
+
+.comments {
+  display: inline-flex;
+
+}
+
+#comment {
+  padding: 10px;
+  margin-right: 20px;
+}
+
+#comments-pic {
+  display: flex;
 }
 
 

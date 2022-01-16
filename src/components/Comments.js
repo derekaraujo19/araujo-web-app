@@ -8,6 +8,7 @@ function Comments({addNewComment}) {
 
   const [name, setName] = useState("");
   const [comment, setComment] = useState("");
+  const [occupation, setOccupation] = useState("")
 
   console.log(name);
   console.log(comment);
@@ -16,7 +17,8 @@ function Comments({addNewComment}) {
     e.preventDefault()
     let newCommentData = {
       "name": name,
-      "comment": comment
+      "comment": comment,
+      "occupation": occupation
     };
     fetch('http://localhost:3001/comments', {
       method: "POST",
@@ -30,10 +32,12 @@ function Comments({addNewComment}) {
   }
 
   return (
-    <div>
+    <div id="comment-form">
       <form onSubmit={handleSubmit}>
         <input type="text" name="name" placeholder="name"
               onChange={(e) => setName(e.target.value)}/>
+        <input type="text" name="occupation" placeholder="i am a"
+              onChange={(e) => setOccupation(e.target.value)}/>
         <input type="text" name="comment" placeholder="comment"
               onChange={(e) => setComment(e.target.value)}/>
         <button type="submit">submit</button>
