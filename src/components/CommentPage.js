@@ -25,6 +25,7 @@ function CommentPage() {
   return (
     <div>
       <h3>SHARE YOUR THOUGHTS</h3>
+      <Comments addNewComment={addNewComment}/>
       <ul className="comments">
         {comments.map((comment) => (
           <div key={comment.id}>
@@ -33,7 +34,6 @@ function CommentPage() {
           </div>
         ))}
       </ul>
-      <Comments addNewComment={addNewComment}/>
     </div>
   )
 }

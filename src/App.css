@@ -20,7 +20,12 @@
 }
 
 .Nav {
-  margin-bottom: 75px;
+  margin-bottom: 80px;
+}
+
+.MusicCards {
+  margin-bottom: -50px;
+  margin: auto;
 }
 
 
