@@ -54,6 +54,12 @@
   margin-bottom: 135px;
   margin-top: 0px;
 }
+
+#music-page {
+  display: inline-block;
+}
+
+
 #comment-form {
   margin-top: -30px;
 }
@@ -77,6 +83,13 @@
   display: flex;
 }
 
+.resSection {
+  display: flex;
+}
+
+#resImage {
+  margin-left: 100px;
+}
 
 
 

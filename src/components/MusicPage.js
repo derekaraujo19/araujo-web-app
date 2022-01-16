@@ -14,7 +14,7 @@ function MusicPage() {
       .then((r) => r.json())
       .then((musicItems) => setProjects(musicItems));
 
-      fetch("http://localhost:3001/music")
+    fetch("http://localhost:3001/music")
       .then((r) => r.json())
       .then((pic) => setMusicPic(pic[0]));
   }, []);
@@ -31,7 +31,7 @@ function MusicPage() {
         width='720px'
         id="musicPic"
       />
-      <div>
+      <div id="music-page">
         {projects.map((project) => (
           <MusicCard
           key={project.id}
