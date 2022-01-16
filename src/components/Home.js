@@ -17,7 +17,7 @@ function Home() {
 
 
   return (
-    <div>
+    <div className="Home">
       <h3>DEREK IS A NY BASED MUSIC PRODUCER AND SOFTWARE DEVELOPER. SINCE 2014 HE HAS BEEN RELEASING MUSIC UNDER HIS ARTIST BANNER, STRANGETHINGS. HE IS CURRENTLY ATTENDING THE FLATIRON SCHOOL FOR SOFTWARE ENGINEERING. </h3>
       <img src={homePic.image}
            alt="Derek"

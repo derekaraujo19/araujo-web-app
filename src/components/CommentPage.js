@@ -27,10 +27,10 @@ function CommentPage() {
       <h3>SHARE YOUR THOUGHTS</h3>
       <ul className="comments">
         {comments.map((comment) => (
-          <li key={comment.id}>
+          <div key={comment.id}>
             <h4>{comment.name} says..</h4>
             <p>{comment.comment}</p>
-          </li>
+          </div>
         ))}
       </ul>
       <Comments addNewComment={addNewComment}/>
