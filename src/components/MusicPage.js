@@ -7,20 +7,31 @@ import MusicCard from "./MusicCard";
 
 function MusicPage() {
   const [projects, setProjects] = useState([]);
+  const [musicPic, setMusicPic] = useState([]);
 
   useEffect(() => {
     fetch("http://localhost:3001/projects")
       .then((r) => r.json())
       .then((musicItems) => setProjects(musicItems));
+
+      fetch("http://localhost:3001/music")
+      .then((r) => r.json())
+      .then((pic) => setMusicPic(pic[0]));
   }, []);
 
-  console.log(projects);
+  console.log(musicPic);
 
   // Now, take "music" and map it out and send down to MusicCard component
 
   return (
-    <div>
-      <ul className="cards">
+    <div className="Music">
+      <img
+        src={musicPic.image}
+        alt="Studio"
+        width='720px'
+        id="musicPic"
+      />
+      <div>
         {projects.map((project) => (
           <MusicCard
           key={project.id}
@@ -32,7 +43,7 @@ function MusicPage() {
           year={project.year}
           />
         ))}
-      </ul>
+      </div>
     </div>
   );
 }

@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 const linkStyles = {
-  color: "#D3D3D3",
+  color: "#F2D2BD",
 };
 
 function NavBar() {

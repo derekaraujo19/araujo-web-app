@@ -3,7 +3,7 @@ import Spotify from "react-spotify-embed";
 
 function MusicCard({title, artist, credits, artwork, player, year}) {
   return (
-    <div className="MusicCards">
+    <div className="musicCard">
       <h2>{title}</h2>
       {/* <p>{year}</p> */}
       <p>{artist}</p>
