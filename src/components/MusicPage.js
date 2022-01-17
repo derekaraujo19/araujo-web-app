@@ -19,7 +19,7 @@ function MusicPage() {
       .then((pic) => setMusicPic(pic[0]));
   }, []);
 
-  console.log(musicPic);
+  // console.log(musicPic);
 
   // Now, take "music" and map it out and send down to MusicCard component
 

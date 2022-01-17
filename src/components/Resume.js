@@ -11,7 +11,7 @@ function Resume() {
 
   return (
     <div className="resSection">
-      <ul>
+      <ul id="resume">
         <h2>education</h2>
           <h3>Flatiron School for Software Engineering</h3>
           <h3>The Clive Davis School for Recorded Music at NYU</h3>
