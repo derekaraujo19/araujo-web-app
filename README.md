@@ -1,4 +1,23 @@
-# Getting Started with Create React App
+# Derek Araujo's Personal Web App
+
+Welcome to my personal web page! This site is designed to be my business card, resume, and media hub all rolled up into one application.
+
+## Backend
+
+The backend repository can be found at [https://github.com/derekaraujo19/json-server-template](https://github.com/derekaraujo19/json-server-template);
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -68,4 +87,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# araujo-web-app
+# araujo-web-app -->
