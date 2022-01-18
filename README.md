@@ -9,6 +9,8 @@ The backend repository can be found at [https://github.com/derekaraujo19/json-se
 ## Walkthrough
 A video walkthrough can be found here:
 
+Additionally, a blog post on my Medium page about working creating this app can be found here:
+
 ## Acklowedgement
 This application was created using Create React App
 
@@ -17,8 +19,6 @@ This application was created using Create React App
   Spotify's Embedded Player:
 
   Font Used: Robato Condensed (https://fonts.google.com/specimen/Roboto+Condensed?preview.size=29)
-
-
 
 ## Status
 
