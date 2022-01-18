@@ -6,10 +6,23 @@ Welcome to my personal web page! This site is designed to be my business card, r
 
 The backend repository can be found at [https://github.com/derekaraujo19/json-server-template](https://github.com/derekaraujo19/json-server-template);
 
+## Walkthrough
+A video walkthrough can be found here:
+
+## Acklowedgement
+This application was created using Create React App
+
+  Icons: Font Awesome
+
+  Spotify's Embedded Player:
+
+  Font Used: Robato Condensed (https://fonts.google.com/specimen/Roboto+Condensed?preview.size=29)
 
 
 
+## Status
 
+The app is currently wrapping up development and will be deployed shortly.
 
 
 
