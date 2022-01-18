@@ -42,6 +42,7 @@
 
 .Music {
   text-align: center;
+  animation-name: fade-in; animation-duration: 1.5s; animation-timing-function: ease-in; animation-iteration-count: 1;
 }
 
 .musicCard {
@@ -57,7 +58,6 @@
   margin-right: auto;
   margin-bottom: 135px;
   margin-top: 0px;
-  animation-name: fade-in; animation-duration: 1.5s; animation-timing-function: ease-in; animation-iteration-count: 1;
 }
 
 #music-page {
