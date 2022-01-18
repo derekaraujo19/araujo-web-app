@@ -23,7 +23,7 @@ function CommentPage() {
   }
 
   return (
-    <div>
+    <div className="comments-page">
       {/* <h3>SHARE YOUR THOUGHTS</h3> */}
       <Comments addNewComment={addNewComment}/>
       <div className="comments">

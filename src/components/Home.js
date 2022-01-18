@@ -12,7 +12,7 @@ function Home() {
       .then((pic) => setHomePic(pic[0]));
   }, []);
 
-  console.log(homePic.image);
+  // console.log(homePic.image);
 
 
 

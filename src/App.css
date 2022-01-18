@@ -23,6 +23,7 @@
 .Home {
   text-align: left;
   display: flex;
+  animation-name: fade-in; animation-duration: 1.5s; animation-timing-function: ease-in; animation-iteration-count: 1;
 }
 
 #homeImage {
@@ -56,6 +57,7 @@
   margin-right: auto;
   margin-bottom: 135px;
   margin-top: 0px;
+  animation-name: fade-in; animation-duration: 1.5s; animation-timing-function: ease-in; animation-iteration-count: 1;
 }
 
 #music-page {
@@ -72,9 +74,12 @@
   background-color: black;
 }
 
+.comments-page {
+  animation-name: fade-in; animation-duration: 1s; animation-timing-function: ease-in; animation-iteration-count: 1;
+}
+
 .comments {
   display: inline-flex;
-
 }
 
 #comment {
@@ -88,6 +93,7 @@
 
 .resSection {
   display: flex;
+  animation-name: fade-in; animation-duration: 1s; animation-timing-function: ease-in; animation-iteration-count: 1;
 }
 
 #resume {
@@ -104,7 +110,32 @@
 
 .icon {
   color:black;
+  animation-name: fade-in; animation-duration: 1s; animation-timing-function: ease-in; animation-iteration-count: 1;
 }
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*
+@keyframes bounce {
+  0% {
+    transform: translateY(0) rotate(0deg) translateX(-100%);
+  }
+  50% {
+    transform: translateY(10px) rotate(5deg);
+  }
+  75% {
+    transform: translateY(10px) rotate(-5deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg) translateX(0);
+  }
+} */
 
 
 
