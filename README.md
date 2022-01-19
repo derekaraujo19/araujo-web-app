@@ -7,7 +7,7 @@ Welcome to my personal web page! This site is designed to be my business card, r
 The backend repository can be found at [https://github.com/derekaraujo19/json-server-template](https://github.com/derekaraujo19/json-server-template);
 
 ## Walkthrough
-A video walkthrough can be found here:
+A video walkthrough of the application running can be found at [here](https://youtu.be/lD-KjGSY7kE).
 
 Additionally, a blog post on my Medium page about working creating this app can be found here:
 
