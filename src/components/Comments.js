@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 
 function Comments({addNewComment}) {
-  // create state to house form data for comment - name, comment - DONE
-  // create values for name & comment that onChange get updated -DONE
+  // create state to house form data for comment - name, comment, occupation
+  // create values for name comment & occupation that onChange get updated
   // onSubmit, call handleSubmit that packages the data from state into an object that makes a post request
     // send packaged newComment data up via addNewComment to commentPage to be added to the DOM
 
@@ -10,8 +10,8 @@ function Comments({addNewComment}) {
   const [comment, setComment] = useState("");
   const [occupation, setOccupation] = useState("")
 
-  console.log(name);
-  console.log(comment);
+  // console.log(name);
+  // console.log(comment);
 
   function handleSubmit(e) {
     e.preventDefault()

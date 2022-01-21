@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import MusicCard from "./MusicCard";
 
-// useEffect function that makes a get request to the db.json server on load and stores data in state
-// send that information down to a MusicCard component via a map
-// don't forget to check/rename the api endpoints
+// useEffect makes a get request to the db.json server on load and stores music projects in state
+// send that information down to a MusicCard component via map
 
 function MusicPage() {
   const [projects, setProjects] = useState([]);
